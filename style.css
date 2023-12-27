@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --bg-color:#F9F4FB;
+    --title-color:#B52184;
+    --description-color:#312D64;
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: var(--bg-color);
+    font-size: 1.6rem;
+}
+header{
+    padding: 0 3.4rem;
+}
+header{
+    height: 67.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+header #bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom:1.7rem ;
+}
+ h1,h2{
+    color: var(--title-color);
+    font-weight: 900;
+    margin-bottom: 5px;
+    
+}
+p{
+    font-weight: 600;
+
+}
+#indicator{
+    margin-top: 3.5rem;
+    width: 5.8rem;
+    height: 10.5rem;
+}
+main{
+    background-color: #343193;
+}
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    padding: 5rem 0;
+}
+#cards .card{
+    width: 35.2rem;
+    height: 33.7rem;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    padding: 2.6rem;
+   
+}
+#cards .card img{
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 3.3rem;
+}
+#cards .card p{
+    color: var(--description-color);
+    margin-top: 1.9rem;
+}
+#contact{
+    margin: auto;
+    padding: 7.8rem 3.9rem;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+}
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+#contact input{
+    font-family: 'Mulish', sans-serif;
+    padding: 1.6rem;
+    width: 100%;
+    border-radius: 1.6rem;
+    border: 1.5px solid #312D64;
+
+}
+#contact #input_name{
+    background-image: url("./imgs/person.svg")  ;
+    width: 100%;
+    height: 6rem;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 5%;
+    padding-left: 4.5rem;
+}
+#contact #input_email{
+    background-image: url("./imgs/at.svg")  ;
+    max-width: 100%;
+    height: 6rem;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 5%;
+    padding-left: 4.5rem;
+}
+textarea{
+    border-radius: 1.6rem;
+    border: 1.5px solid #312D64;
+    padding: 1.2rem;
+    line-height: 140%;
+    align-items: flex-start;
+}
+#contact input[type="submit"]{
+    max-width: 15.9rem;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #302C63 ;
+    color: #FFF;
+}
+
+footer{
+    width: 100%;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    color: #FFF;
+    padding: 1.6rem;
+    text-align: center;
+}
+
+@media (min-width:506px) {
+   header{
+    flex-direction: row-reverse;
+     justify-content: center;
+     padding-bottom: 10.3rem;
+     align-items: center;
+   }
+header #bg{
+    max-width: 71.9rem;
+    height: 71.9rem;
+
+}
+#subtitle{
+    width: 55.4rem;
+}
+#subtitle h1{
+    font-size: 5.8rem;
+}
+#subtitle p{
+    font-size: 3.2rem;
+}
+#subtitle img{
+    margin-top: 17.9rem;
+}
+#cards{
+    flex-direction: row;
+    justify-content: center;
+    gap: 6.0rem;
+}
+#cards .card{
+    width: 36.6rem;
+    height:44.8rem ;
+    padding: 3.2rem;
+    overflow: hidden;
+}
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9rem;
+}
+#formulario{
+    width: 60rem;
+}
+#bgform{
+    min-width:50% ;
+    height: 61.4rem;
+    background-image: url("imgs/image\ 11976.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+}
